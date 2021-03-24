@@ -13,7 +13,7 @@
       <header class="header" id="header">
         <div class="container">
           <div class="top">
-            <div class="logo">courseway</div>
+            <a href="#" class="logo">courseway</a>
             <nav class="nav">
               <ul class="list">
                 <li class="item"><a class="link scroll" href="#header">головна</a></li>
@@ -23,10 +23,12 @@
                 <li class="item"><a class="link scroll" href="#registration">реєстрація</a></li>
               </ul>
             </nav>
-            <div class="burger" id="sidebarToggle">
-              <span></span>
-              <span></span>
-              <span></span>
+            <div class="burger-menu" id="menuToggle">
+              <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
           </div>
           <div class="info">
@@ -47,8 +49,8 @@
       <section class="advantages">
         <div class="container">
           <div class="title">переваги</div>
-          <ul class="list">
-            <li>
+          <div class="wrapper">
+            <div class="block">
               <div class="item">
                 <img src="images/advantages/Clock.png" alt="items" />
                 <div class="title">Будь-коли</div>
@@ -64,11 +66,11 @@
                   доступ до інтернету.
                 </p>
               </div>
-            </li>
-            <li class="logo">
+            </div>
+            <div class="advantages_image">
               <img src="images/advantages/advantages_icon.png" alt="items" />
-            </li>
-            <li>
+            </div>
+            <div class="block">
               <div class="item">
                 <img src="images/advantages/iPhone.png" alt="items" />
                 <div class="title">Будь-який пристрій</div>
@@ -85,8 +87,8 @@
                   заваді найкращій освіті.
                 </p>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -300,23 +302,26 @@
         </div>
       </footer>
     </div>
+    <!-- scroll-To-Top -->
     <button class="scroll-To-Top">
       <img src="images/top.png" alt="top" />
     </button>
-    <aside class="sidebar" id="sidebar">
+
+    <!-- mobile_menu -->
+    <div class="mobile_menu" id="mobile_menu">
       <button class="back">
-        <img src="images/top.png" alt="back" />
+        <img src="images/close.png" alt="back" />
       </button>
       <nav class="nav">
         <ul class="list">
-          <li class="item"><a class="link" href="#">головна</a></li>
-          <li class="item"><a class="link" href="#">курси</a></li>
-          <li class="item"><a class="link" href="#">блог</a></li>
-          <li class="item"><a class="link" href="#">про проект</a></li>
-          <li class="item"><a class="link" href="#">реєстрація</a></li>
+          <li class="item"><a href="#header" class="link mb-link">головна</a></li>
+          <li class="item"><a href="#courses" class="link mb-link">курси</a></li>
+          <li class="item"><a href="#partners" class="link mb-link">блог</a></li>
+          <li class="item"><a href="#developers" class="link mb-link">про проект</a></li>
+          <li class="item"><a href="#registration" class="link mb-link">реєстрація</a></li>
         </ul>
       </nav>
-    </aside>
+    </div>
     <script src="js/script.js"></script>
   </body>
 </html>

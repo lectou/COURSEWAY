@@ -1,3 +1,5 @@
+
+// ----------scroll to link---------------------------------
 const anchors = document.querySelectorAll('a.scroll')
 
 for (let anchor of anchors) {
@@ -14,13 +16,15 @@ for (let anchor of anchors) {
 }
 
 
+// ----------button to top---------------------------------
+
 document.addEventListener("scroll", handleScroll);
 
 const scrollToTopBtn = document.querySelector(".scroll-To-Top");
 
 function handleScroll() {
   let scrollableHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  let GOLDEN_RATIO = 0.4;
+  let GOLDEN_RATIO = 0.2;
 
   if ((document.documentElement.scrollTop / scrollableHeight) > GOLDEN_RATIO) {
     //show button
@@ -40,36 +44,40 @@ function scrollToTop() {
   });
 }
 
-const burger = document.getElementById('sidebarToggle');
-const sidebar = document.querySelector('.sidebar');
-const page = document.querySelector('.page');
+
+// ----------burger menu---------------------------------
+
+const burger = document.getElementById('menuToggle');
+const mobileMenu = document.querySelector('#mobile_menu');
+const closeMenuLink = document.querySelectorAll('.mb-link');
 const body = document.body;
 
 burger.addEventListener('click', event => {
 
-  if (body.classList.contains('show-sidebar')) {
-    closeSidebar()
+  if (body.classList.contains('show-menu')) {
+    closeMenu()
   } else {
-    showSidebar()
+    showMenu()
   }
 });
 
 const back = document.querySelector('.back');
 back.addEventListener('click', event => {
-  closeSidebar()
+  closeMenu()
 });
 
-function showSidebar() {
-  let mask = document.createElement('div');
-  mask.classList.add('mask');
-  mask.addEventListener('click', closeSidebar);
-  page.appendChild(mask);
-  body.classList.toggle('show-sidebar');
-  sidebar.classList.toggle('active');
+function showMenu() {
+  body.classList.toggle('show-menu');
+  mobileMenu.classList.toggle('active');
 }
 
-function closeSidebar() {
-  body.classList.remove('show-sidebar');
-  sidebar.classList.remove('active');
-  document.querySelector('.mask').remove();
+function closeMenu() {
+  body.classList.remove('show-menu');
+  mobileMenu.classList.remove('active');
 }
+
+closeMenuLink.forEach(item => {
+  item.addEventListener('click', event => {
+    closeMenu()
+  })
+})
