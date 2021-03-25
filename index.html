@@ -12,35 +12,37 @@
       <!-- header -->
       <header class="header" id="header">
         <div class="container">
-          <div class="top">
-            <a href="#" class="logo">courseway</a>
-            <nav class="nav">
-              <ul class="list">
-                <li class="item"><a class="link scroll" href="#header">головна</a></li>
-                <li class="item"><a class="link scroll" href="#courses">курси</a></li>
-                <li class="item"><a class="link scroll" href="#partners">блог</a></li>
-                <li class="item"><a class="link scroll" href="#developers">про проект</a></li>
-                <li class="item"><a class="link scroll" href="#registration">реєстрація</a></li>
-              </ul>
-            </nav>
-            <div class="burger-menu" id="menuToggle">
-              <div class="burger">
-                <span></span>
-                <span></span>
-                <span></span>
+          <div class="header-block">
+            <div class="top">
+              <a href="#" class="logo">courseway</a>
+              <nav class="nav">
+                <ul class="list">
+                  <li class="item"><a class="link scroll" href="#header">головна</a></li>
+                  <li class="item"><a class="link scroll" href="#courses">курси</a></li>
+                  <li class="item"><a class="link scroll" href="#partners">блог</a></li>
+                  <li class="item"><a class="link scroll" href="#developers">про проект</a></li>
+                  <li class="item"><a class="link scroll" href="#registration">реєстрація</a></li>
+                </ul>
+              </nav>
+              <div class="burger-menu" id="menuToggle">
+                <div class="burger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="info">
-            <div class="about">
-              <h1 class="title">безкоштовні онлайн-курси</h1>
-              <p>від викладачів провідних університетів світу</p>
+            <div class="info">
+              <div class="about">
+                <h1 class="title">безкоштовні онлайн-курси</h1>
+                <p>від викладачів провідних університетів світу</p>
+              </div>
+              <form class="form">
+                <input type="email" placeholder="Email:" />
+                <input type="password" placeholder="Password:" />
+                <button class="btn" type="submit"><span>розпочати!</span></button>
+              </form>
             </div>
-            <form class="form">
-              <input type="email" placeholder="Email:" />
-              <input type="password" placeholder="Password:" />
-              <button class="btn" type="submit"><span>розпочати!</span></button>
-            </form>
           </div>
         </div>
       </header>
@@ -133,7 +135,6 @@
               </div>
             </li>
             <li class="item">
-              <!-- <div class="block"> -->
               <div class="desctription">
                 <div class="title">Економіка для всіх</div>
                 <div class="image">
@@ -144,7 +145,6 @@
                   unreal.
                 </p>
                 <a href="#">Read more...</a>
-                <!-- </div> -->
                 <button class="btn">зареєструватись на курс</button>
               </div>
               <div class="image">
@@ -174,33 +174,39 @@
 
       <!-- partners -->
       <section class="partners" id="partners">
-        <div class="title">Партнери - освітні заклади</div>
         <div class="container">
-          <div class="button button-prev"><img src="images/slider/back.png" alt="slider" /></div>
-          <div class="button button-next"><img src="images/slider/back.png" alt="slider" /></div>
-          <ul class="points">
-            <li class="active"></li>
-            <li></li>
-            <li></li>
-          </ul>
-          <ul class="list">
-            <li class="item">
-              <img src="images/partners/cambridge.png" alt="logo" />
-              <a href="#" class="title">Cambridge</a>
-            </li>
-            <li class="item">
-              <img src="images/partners/harvard_university.png" alt="logo" />
-              <a href="#" class="title">Harvard</a>
-            </li>
-            <li class="item">
-              <img src="images/partners/mit_crest.png" alt="logo" />
-              <a href="#" class="title">MIT</a>
-            </li>
-            <li class="item">
-              <img src="images/partners/ucla.png" alt="logo" />
-              <a href="#" class="title">UCLA</a>
-            </li>
-          </ul>
+          <div class="title">Партнери - освітні заклади</div>
+          <div class="slider">
+            <div class="button button-prev">
+              <img src="images/slider/back.png" alt="slider" />
+            </div>
+            <div class="button button-next">
+              <img src="images/slider/back.png" alt="slider" />
+            </div>
+            <ul class="points">
+              <li class="active"></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <ul class="list">
+              <li class="item">
+                <img src="images/partners/cambridge.png" alt="logo" />
+                <a href="#" class="title">Cambridge</a>
+              </li>
+              <li class="item">
+                <img src="images/partners/harvard_university.png" alt="logo" />
+                <a href="#" class="title">Harvard</a>
+              </li>
+              <li class="item">
+                <img src="images/partners/mit_crest.png" alt="logo" />
+                <a href="#" class="title">MIT</a>
+              </li>
+              <li class="item">
+                <img src="images/partners/ucla.png" alt="logo" />
+                <a href="#" class="title">UCLA</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
